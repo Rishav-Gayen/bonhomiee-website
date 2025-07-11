@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="images/bonhomiee-logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Bonhomiee Travel Solutions</title>
+    
+            
+</head>
+<body>
+    <header class="header">
+        <img src="images/nav-logo.png" alt="Bonhomiee Travel Agency Logo" class="logo">
+        <nav>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-us">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://creatorapp.zohopublic.in/bonhomieeodyssey/bonhomiee-odyssey/form-perma/EMPLOYEE_DETAILS/zDKz5e2yTFQ96fUgKN0xaZ3JfvqBmp6TKqWTppqQm6HdgqYQANVrw12F0B1z14RkQj5u87QtS49u7Ps5mamOJytFUhNdTxvzRCVF">Corporate User Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1 class="hero-heading">Smart Tech, Smarter Trips – Travel Solutions Redefined</h1>
+       
+        <section class="section">
+            <div class="cards">
+                <div class="card business-travel" id="businessTravelCard">
+                    <a href="#" class="business-travel-link">Explore Business Travel</a>
+                </div>
+                <div class="card custom-travel">
+                    <a href="https://bonhomieeodyssey.zohocreatorportal.in/#Page:Customer_Dashboard">Design your next Trip</a>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const businessTravelCard = document.getElementById('businessTravelCard');
+                
+                businessTravelCard.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    Swal.fire({
+                        title: 'Welcome to Business Travel',
+                        html: `
+                            <div class="business-travel-popup">
+                                <p class="popup-message">Please choose an option to continue</p>
+                                <div class="popup-links">
+                                    <a href="https://creatorapp.zohopublic.in/bonhomieeodyssey/bonhomiee-odyssey/form-perma/EMPLOYEE_DETAILS/zDKz5e2yTFQ96fUgKN0xaZ3JfvqBmp6TKqWTppqQm6HdgqYQANVrw12F0B1z14RkQj5u87QtS49u7Ps5mamOJytFUhNdTxvzRCVF" class="popup-link signup-link">First time user? (Sign up here)</a>
+                                    <a href="https://bonhomieeodyssey.zohocreatorportal.in/" class="popup-link login-link">Login</a>
+                                </div>
+                            </div>
+                        `,
+                        showConfirmButton: false,
+                        showCloseButton: true,
+                        customClass: {
+                            popup: 'business-travel-swal',
+                            closeButton: 'swal-close-button',
+                            title: 'swal-title',
+                            htmlContainer: 'swal-html-container'
+                        },
+                        didOpen: () => {
+                            // Prevent default behavior of links inside the popup
+                            document.querySelectorAll('.popup-link').forEach(link => {
+                                link.addEventListener('click', (e) => {
+                                    // You can add your custom behavior here
+                                    console.log('Link clicked:', e.target.textContent);
+                                });
+                            });
+                        }
+                    });
+                });
+            });
+        </script>
+    </section>
+
+
+    <section class="services" id="services">
+        <div class="section-header">
+            <h2 class="section-title discover">Discover Our Solutions</h2>
+        </div>
+        <div class="services-grid">
+
+            <div class="service-card corporate">
+                <div class="service-icon">
+                    <img src="images/Business-Travel.svg" class="business-travel" alt="">
+                </div>
+                <h3>Business Travel</h3>
+                <p>Streamlined business travel solutions that save time and money while ensuring comfort and efficiency.</p>
+                <ul class="service-features">
+                    <li>Dedicated account management</li>
+                    <li>Cost control reporting</li>
+                    <li>Multi-city itineraries</li>
+                    <li>Meeting/event planning</li>
+                </ul>
+                <button class="cta-button outline"><a href="https://bonhomieeodyssey.zohocreatorportal.in/">Explore Business Travel</a></button>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="images/Custom-Holidays.svg" class="custom-holidays" alt="">
+                </div>
+                <h3>Custom Holidays</h3>
+                <p>Personalized travel experiences crafted just for you. From weekend getaways to dream vacations, we handle every detail.</p>
+                <ul class="service-features">
+                    <li>Custom itineraries</li>
+                    <li>Exclusive deals</li>
+                    <li>24/7 traveler support</li>
+                    <li>VIP airport services</li>
+                </ul>
+                <button class="cta-button outline"><a href="https://bonhomieeodyssey.zohocreatorportal.in/#Page:Customer_Dashboard">Plan Your Trip</a></button>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <section class="about-us-section" id="about-us">
+        <div class="container">
+            <div class="about-content-wrapper">
+                <div class="about-text-content">
+                    <h2 class="section-title">About Us</h2>
+                    <p class="section-description">Welcome to Bonhomiee, India's pioneering digital travel ecosystem, where technology and innovation converge to redefine the way we travel. Designed with a startup’s agility and India’s entrepreneurial spirit, Bonhomiee is more than a travel platform—it’s a dynamic space where individuals and corporates alike connect, collaborate, and fulfill every travel need effortlessly.</p>
+
+                    <div class="our-story-section">
+                        <h3 class="subsection-title">Our Story</h3>
+                        <p>Designed with a startup’s agility and India’s entrepreneurial spirit, Bonhomiee is more than a travel platform—it’s a dynamic space where individuals and corporates alike connect, collaborate, and fulfill every travel need effortlessly.</p>
+                    </div>
+                </div>
+
+                <div class="about-image-wrapper">
+                    <img src="images/employees-edited.jpg" alt="Bonhomiee Team" class="main-about-image">
+                </div>
+                
+            </div>
+
+            <div class="cards-wrapper">
+                <div class="detail-card">
+                    <h3>Our Mission</h3>
+                    <p>To revolutionize corporate and leisure travel by seamlessly integrating AI-powered personalization, efficient booking systems, and a deep understanding of global traveler preferences—delivering smart, seamless, and meaningful journeys for Indian and international travelers alike.</p>
+                </div>
+                <div class="detail-card">
+                    <h3>Our Vision</h3>
+                    <p>To be the most trusted and innovative travel partner—empowering businesses, leisure explorers, and inbound travelers with technology-driven solutions that blend efficiency, personalization, and cultural authenticity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="teams-section" id="teams">
+        <div class="container">
+            <h2 class="section-title change">Meet The Change Makers</h2>
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="team-member-card">
+                        <img src="images/sudip-sir.jpg" alt="Founder">
+                        <h4>Sudip Pal</h4>
+                        <p>CEO & founder</p>
+                        <a target="_blank" href="https://www.linkedin.com/in/sudippalbonhomiee/" aria-label="Linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="team-member-card">
+                        <img src="images/sanjib-samadder.jpeg" alt="Sanjib Samadder">
+                        <h4>Sanjib Samadder</h4>
+                        <p>Sales & Admin Manager</p>
+                    </div>
+                    <div class="team-member-card">
+                        <img src="images/Dipanjan-Sarkar.png" alt="Dipanjan Sarkar">
+                        <h4>Dipanjan Sarkar</h4>
+                        <p>Developer</p>
+                    </div>
+                    <div class="team-member-card">
+                        <img src="images/Anirban-Da.jpeg" alt="Anirban Mukherjee">
+                        <h4>Anirban Mukherjee</h4>
+                        <p>Business Analyst</p>
+                    </div>
+                    <div class="team-member-card">
+                        <img src="images/Sneha-Singh.jfif" alt="Sneha Singh">
+                        <h4>Sneha Singh</h4>
+                        <p>Fullstack Developer</p>
+                    </div>
+                    <div class="team-member-card">
+                        <img src="images/Rishav.jpg" alt="Rishav Gayen">
+                        <h4>Rishav Gayen</h4>
+                        <p>Product Designer</p>
+                    </div>
+                    <div class="team-member-card">
+                        <img src="images/Pallavi-Kumari.jpg" alt="Pallavi Kumari">
+                        <h4>Pallavi Kumari</h4>
+                        <p>Digital Branding Specialist</p>
+                    </div>
+                    <div class="team-member-card">
+                        <img src="images/vibhuti.jpg" alt="Vibhuti Bhargava">
+                        <h4>Vibhuti Bhargava</h4>
+                        <p>Graphic Designer</p>
+                    </div>
+                    
+                    <div class="team-member-card">
+                        <img src="images/esha-das.jpeg" alt="Esha das">
+                        <h4>Esha Das</h4>
+                        <p>Business Operations</p>
+                    </div>
+                </div>
+                <button class="carousel-button prev" aria-label="Previous slide">&#10094;</button>
+                <button class="carousel-button next" aria-label="Next slide">&#10095;</button>
+            </div>
+            <div class="carousel-dots"></div>
+        </div>
+    </section>
+
+    <section class="section" id="testimonials">
+        <div class="container">
+            <h2 class="testimonials title">What Our Clients Say</h2>
+            <p class="subtitle">Hear from our satisfied travelers</p>
+            
+            <div class="carousel">
+                <div class="cards">
+                    <div class="card active">
+                        <div class="quote-icon">“</div>
+                        <p class="testimonial-text">"Amazing service! Our business trip was seamless and stress-free. The attention to detail was exceptional and everything was perfectly organized."</p>
+                        <div class="client-info">
+                            <div class="client-avatar" style="background-image: url('https://randomuser.me/api/portraits/men/32.jpg')"></div>
+                            <div>
+                                <p class="client-name">- John Doe</p>
+                                <p class="client-title">CEO, TechCorp</p>
+                            </div>
+                        </div>
+                        <div class="rating">★★★★★</div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="quote-icon">“</div>
+                        <p class="testimonial-text">"The custom travel package was perfect for our family vacation! The team understood exactly what we needed and delivered beyond our expectations."</p>
+                        <div class="client-info">
+                            <div class="client-avatar" style="background-image: url('https://randomuser.me/api/portraits/women/44.jpg')"></div>
+                            <div>
+                                <p class="client-name">- Jane Smith</p>
+                                <p class="client-title">Marketing Director</p>
+                            </div>
+                        </div>
+                        <div class="rating">★★★★★</div>
+                    </div>
+                </div>
+                
+                <button class="prev">❮</button>
+                <button class="next">❯</button>
+                
+                <div class="carousel-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section" id="blogs">
+        <div class="container">
+            <h2 class="testimonials title">Our Latest Blogs</h2>
+            <p class="subtitle">Hear from our industry insights</p>
+            
+            <div class="carousel">
+                <div class="cards">
+                    <div class="card active">
+                        <div class="quote-icon">“</div>
+                        <p class="testimonial-text">"Amazing service! Our business trip was seamless and stress-free. The attention to detail was exceptional and everything was perfectly organized."</p>
+                        <div class="client-info">
+                            <div class="client-avatar" style="background-image: url('https://randomuser.me/api/portraits/men/32.jpg')"></div>
+                            <div>
+                                <p class="client-name">- John Doe</p>
+                                <p class="client-title">CEO, TechCorp</p>
+                            </div>
+                        </div>
+                        <div class="rating">★★★★★</div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="quote-icon">“</div>
+                        <p class="testimonial-text">"The custom travel package was perfect for our family vacation! The team understood exactly what we needed and delivered beyond our expectations."</p>
+                        <div class="client-info">
+                            <div class="client-avatar" style="background-image: url('https://randomuser.me/api/portraits/women/44.jpg')"></div>
+                            <div>
+                                <p class="client-name">- Jane Smith</p>
+                                <p class="client-title">Marketing Director</p>
+                            </div>
+                        </div>
+                        <div class="rating">★★★★★</div>
+                    </div>
+                </div>
+                
+                <button class="prev">❮</button>
+                <button class="next">❯</button>
+                
+                <div class="carousel-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+ <section class="faq-section" id="faq">
+    <h2 class="faq-heading">Frequently Asked Questions</h2>
+    <div class="accordion-grid">
+        <!-- Row 1 -->
+        <div class="faq-row">
+            <div class="accordion-item">
+                <h3 class="accordion-header">What services do you offer?<span class="accordion-icon">▼</span></h3>
+                <div class="accordion-content">
+                    <p>We offer business travel planning and custom travel packages.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h3 class="accordion-header">How can I book a trip?<span class="accordion-icon">▼</span></h3>
+                <div class="accordion-content">
+                    <p>Visit our website portal to book your trip.</p>
+                </div>
+            </div>
+           
+        </div>
+        
+        <!-- Row 2 -->
+        <div class="faq-row">
+            <div class="accordion-item">
+                <h3 class="accordion-header">Can I cancel my booking?<span class="accordion-icon">▼</span></h3>
+                <div class="accordion-content">
+                    <p>Yes, cancellations are possible with certain conditions.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h3 class="accordion-header">What's included in packages?<span class="accordion-icon">▼</span></h3>
+                <div class="accordion-content">
+                    <p>Flights, accommodations, and tailored activities.</p>
+                </div>
+            </div>
+        </div>
+
+         <!-- Row 3 -->
+        <div class="faq-row">
+
+             <div class="accordion-item">
+                <h3 class="accordion-header">Do you offer additional services?<span class="accordion-icon">▼</span></h3>
+                <div class="accordion-content">
+                    <p>Yes, we provide various add-on services.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h3 class="accordion-header">Do you provide travel insurance?<span class="accordion-icon">▼</span></h3>
+                <div class="accordion-content">
+                    <p>Yes, we offer comprehensive travel insurance.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="contact-section" id="contact">
+    <h2>Contact Bonhomiee</h2>
+    <div class="contact-container">
+        <div class="contact-card contact-form-card">
+            <form
+            action="https://formspree.io/f/xanjerve"
+            method="POST"
+            >
+                <h3>Send Us a Message</h3>
+                <div class="contact-form">
+                    <input type="text" placeholder="Name" name="name" required>
+                    <input type="email" placeholder="Email" name="email" required>
+                    <input type="text" placeholder="Subject" name="subject" required>
+                    <textarea placeholder="Message" rows="5" name="message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="info-and-map-wrapper">
+            <div class="contact-card">
+                <h3>Get in Touch</h3>
+                <p>Email: bookings@bonhomiee.com, planyourtrip@bonhomiee.com</p>
+                <p>Phone: +91 93308 68500</p>
+                <p>Mobile: +91 98302 68500</p>
+                <p>Address: Ecospace Business Park, Tower 2A, 6th Floor, Flexworx, New Town, Action Area II, Kolkata - 700156.</p>
+            </div>
+            <div class="contact-map-wrapper">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.341399478479!2d88.46820237582236!3d22.56514783350172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027663e26f53e3%3A0x6b7b2a6d5c6b9d6e!2sEcospace%20Business%20Park!5e0!3m2!1sen!2sin!4v1717942709289!5m2!1sen!2sin"
+                    width="100%"
+                    height="245"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <div class="quick-links">
+                <a href="#home">Home</a>
+                <a href="#about-us">About</a>
+                <a href="#services">Services</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=61576707107654" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/company/bonhomiee" aria-label="Linkedin"><i class="fab fa-linkedin"></i></a>
+                <a target="_blank" href="https://www.instagram.com/bonhomiee25/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-column copyright">
+            <h3>Bonhomiee</h3>
+            <p>© 2025 Bonhomiee. All rights reserved.</p>
+            <p>Crafted with care for travelers.</p>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
+
