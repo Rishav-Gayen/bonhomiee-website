@@ -972,7 +972,7 @@ h3.subsection-title + p {
     }
 
     .main-about-image {
-        max-width: 80%; /* Adjust image size on medium screens */
+        max-width: 90%; /* Adjust image size on medium screens */
     }
 
     .team-member-card {

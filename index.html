@@ -51,10 +51,10 @@
         <script>
             document.addEventListener('DOMContentLoaded', function() {
                 const businessTravelCard = document.getElementById('businessTravelCard');
-                
-                businessTravelCard.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    
+                const businessTravelBtn = document.getElementById('business-travel-btn');
+
+
+                function fireSwal() {
                     Swal.fire({
                         title: 'Welcome to Business Travel',
                         html: `
@@ -84,7 +84,18 @@
                             });
                         }
                     });
+                }
+
+                
+                businessTravelCard.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    fireSwal()
                 });
+
+                businessTravelBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    fireSwal();
+                })
             });
         </script>
     </section>
@@ -108,7 +119,7 @@
                     <li>Multi-city itineraries</li>
                     <li>Meeting/event planning</li>
                 </ul>
-                <button class="cta-button outline"><a href="https://bonhomieeodyssey.zohocreatorportal.in/">Explore Business Travel</a></button>
+                <button id="business-travel-btn" class="cta-button outline"><a href="https://bonhomieeodyssey.zohocreatorportal.in/">Explore Business Travel</a></button>
             </div>
 
             <div class="service-card">
@@ -123,7 +134,7 @@
                     <li>24/7 traveler support</li>
                     <li>VIP airport services</li>
                 </ul>
-                <button class="cta-button outline"><a href="https://bonhomieeodyssey.zohocreatorportal.in/#Page:Customer_Dashboard">Plan Your Trip</a></button>
+                <button class="cta-button outline"><a href="https://creatorapp.zohopublic.in/bonhomieeodyssey/bonhomiee-odyssey/page-perma/Customer_Dashboard/evVnk9xkazRayA6bWJU1KA9POMDzkH4OTbFwyY1yFb4zdXF208Gavv5sw6CMhTrUWsv8SV5dHaS8BbPZOqOXYVKuKS9q3auMOeYS">Plan Your Trip</a></button>
             </div>
 
             
